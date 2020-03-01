@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "659272328614",
+    "firebase_url": "https://androidnotification-e33f9.firebaseio.com",
+    "project_id": "androidnotification-e33f9",
+    "storage_bucket": "androidnotification-e33f9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659272328614:android:5d29285926657c79",
+        "android_client_info": {
+          "package_name": "com.mworkstation.androidnotification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659272328614-f0n5kpm3p3a2s4lkj094pa0b8rjh9df0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mworkstation.androidnotification",
+            "certificate_hash": "54a5ec976e590b84b957fe631ad3c183e5b901c7"
+          }
+        },
+        {
+          "client_id": "659272328614-jmlkd1cbugk828cq16i090jhcu17enb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdeB6OrE9jRxSDOnF3R-GXdOkMzFJH6Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659272328614-jmlkd1cbugk828cq16i090jhcu17enb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:659272328614:android:e7b035d0cef8a9e8d05b67",
+        "android_client_info": {
+          "package_name": "com.rn_notification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "659272328614-jmlkd1cbugk828cq16i090jhcu17enb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdeB6OrE9jRxSDOnF3R-GXdOkMzFJH6Ps"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "659272328614-jmlkd1cbugk828cq16i090jhcu17enb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

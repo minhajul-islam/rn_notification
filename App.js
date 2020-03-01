@@ -18,8 +18,6 @@ import {
     StatusBar,
 } from 'react-native';
 import DropdownAlert from 'react-native-dropdownalert';
-
-
 import {
     Header,
     LearnMoreLinks,
@@ -29,6 +27,7 @@ import {
 } from 'react-native/Libraries/NewAppScreen';
 import {AlertHelper} from './src/components/common/AlertHelper';
 import {AlertNotification} from './src/components/common/AlertNotification';
+import * as firebase from "react-native-firebase";
 
 const App: () => React$Node = () => {
     return (
@@ -67,7 +66,36 @@ const App: () => React$Node = () => {
                                 onPress={() => {
                                     AlertNotification.show('notification', 'Error', 'Hi,');
                                     // AlertHelper.show('warn', 'Error', "Hi,");
-
+                                    firebase.messaging().subscribeToTopic('notification');
+                                    firebase.messaging().getToken()
+                                        .then(fcmToken => {
+                                            if (fcmToken) {
+                                             console.log("fcmToken",fcmToken)
+                                            } else {
+                                                // user doesn't have a device token yet
+                                                // Alert.alert("fcmToken", "user doesn't have a device token yet");
+                                            }
+                                        });
+                                }}>
+                                <Text style={styles.sectionTitle}>Step One</Text>
+                            </TouchableHighlight>
+                        </View>
+                        <View style={styles.sectionContainer}>
+                            <TouchableHighlight
+                                underlayColor={'transparent'}
+                                onPress={() => {
+                                    AlertNotification.show('notification', 'Error', 'Hi,');
+                                    // AlertHelper.show('warn', 'Error', "Hi,");
+                                    firebase.messaging().unsubscribeFromTopic('notification');
+                                    firebase.messaging().getToken()
+                                        .then(fcmToken => {
+                                            if (fcmToken) {
+                                             console.log("fcmToken",fcmToken)
+                                            } else {
+                                                // user doesn't have a device token yet
+                                                // Alert.alert("fcmToken", "user doesn't have a device token yet");
+                                            }
+                                        });
                                 }}>
                                 <Text style={styles.sectionTitle}>Step One</Text>
                             </TouchableHighlight>
